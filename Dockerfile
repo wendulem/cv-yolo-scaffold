@@ -1,10 +1,10 @@
 # Dockerfile
-
+# DO NOT MODIFY THIS FILE
 FROM tiangolo/uwsgi-nginx-flask:python3.8
 
 # These will be replaced in the automatic deployment process
-ENV LISTEN_PORT $port
-EXPOSE $port
+ENV LISTEN_PORT opsport
+EXPOSE opsport
 
 COPY ./app /app
 
