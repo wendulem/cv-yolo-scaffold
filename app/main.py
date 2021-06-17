@@ -75,8 +75,8 @@ def results(filename):
             filename=new_filename) 
     else:
         found = False
-        # replace the label with whatever you are trying to detect
-        return render_template('results.html', labels='No Objects', old_filename = filename, filename=filename) 
+        # replace 'Objects' with whatever you are trying to detect
+        return render_template('results.html', labels='No Objects', old_filename=filename, filename=filename) 
 
 @app.route('/files/<path:filename>')
 def files(filename):
