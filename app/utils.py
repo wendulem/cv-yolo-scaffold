@@ -8,7 +8,6 @@ def get_base_url(port):
     base_url = "/%s/port/%s/" % (project_id, port)
     return base_url
 
-
 def allowed_file(filename, ALLOWED_EXTENSIONS=set(['png', 'jpg', 'jpeg'])):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
